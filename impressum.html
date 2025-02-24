@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            color: #2D3C4B;
+            background: #52b7c1 url('paper-background.png') repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+          background: white;
+
+          position: fixed;
+          top: 0px;
+          right: 50px;
+          text-align: center;
+        }
+
+        #logo-text {
+          color: #2D3C4B;
+          font-weight: bold;
+          padding: 0px 10px;
+          line-height: 0px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 120px auto 60px;
+            flex: 1;
+        }
+
+        h1 {
+            background: #2D3C4B;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 0 px;
+        }
+
+        a {
+         text-decoration: none;
+         color: #2D3C4B;
+        }
+
+        .contact {
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+            flex-wrap: wrap;
+        }
+        .contact p {
+            margin: 0 40px 0 0;
+        }
+
+        #email {
+          margin: 22px 0 0 0;
+        }
+
+        .text-lang {
+          text-align: justify;
+        }
+
+        .zero-margin {
+          margin-block-start: 0;
+          margin-block-end: 0;
+        }
+
+        .social-media {
+          margin: 40px 0;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .social-media a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 10px;
+        }
+
+        .social-media a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+        }
+
+        #stand {
+          font-size: 0.7em;
+          color: white;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px 0;
+            background: #2D3C4B;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-content {
+          width: 80%;
+          max-width: 800px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        footer p {
+          color: #ffffff;
+          font-weight: bold;
+        }
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+      <p id="logo-text">Pascal Mundt</p>
+    </div>
+    <div class="container">
+        <h1>Impressum</h1>
+        <p><strong>Dieses Impressum gilt für alle meine Internetauftritte.</strong></p>
+        <p>Darunter fallen insbesondere meine Konten auf:<br>
+           Facebook: <strong>Pascal Mundt</strong> (<a href="facebook.com/pascal.mundt.fb">facebook.com/pascal.mundt.fb</a>) und<br>
+           Instagram: <strong>@pascal.mundt</strong> (<a href="instagram.com/pascal.mundt">instagram.com/pascal.mundt</a>)
+        </p>
+        <p>Verantwortlich für dieses Angebot gemäß § 5 TMG / § 18 MStV:</p>
+        <div class="contact">
+          <p>Pascal Mundt<br>
+             c/o CDU Oranienburg<br>
+             Südcenter Aufgang A<br>
+             Berliner Straße 119-125<br>
+             16515 Oranienburg<br>
+          </p>
+          <p id="email">E-Mail: <a href="mailto:pascal.mundt@mail.de?subject=Impressum">pascal.mundt@mail.de</a></p>
+        </div>
+        <p class="text-lang">Bei dem Inhalt meiner Internetauftritte handelt es sich um urheberrechtlich geschützte Werke. Ich gestatte die Übernahme von Texten in Datenbestände, die ausschließlich für den privaten, nicht kommerziellen Gebrauch eines Nutzers bestimmt sind. Die Übernahme und Nutzung der Daten zu anderen Zwecken bedarf der schriftlichen Zustimmung.</p>
+        <p class="zero-margin"><strong>Haftungshinweis:</strong></p>
+        <p class="zero-margin text-lang">Auf meinen Accounts können externe Inhalte, wie andere Internetseiten, verlinkt sein, auf deren Inhalt ich keinen Einfluss habe; für den Inhalt ist ausschließlich der Betreiber der jeweiligen Webseite verantwortlich. Trotz der Überprüfung der Inhalte im gesetzlich gebotenen Rahmen kann ich daher keine Verantwortung für den Inhalt dieser Links bzw. der verlinkten Seite übernehmen.</p>
+        <div class="social-media">
+          <a href="https://instagram.com/pascal.mundt">
+                <img src="instagram-icon.png" alt="Instagram">@pascal.mundt
+          </a>
+          <a href="https://facebook.com/pascal.mundt.fb">
+                <img src="facebook-icon.png" alt="Facebook">/pascal.mundt.fb
+          </a>
+          <a href="https://linktr.ee/pascal.mundt">
+            <img src="linktree-icon.png" alt="Linktree">/pascal.mundt
+          </a>
+        </div>
+        <p id="stand">Stand: März 2025</p>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; Pascal Mundt</p>
+          <div>
+            <a href="https://www.cdu-oranienburg.de">CDU Oranienburg</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
