@@ -14,7 +14,7 @@
         body {
             font-family: Inter, Arial, sans-serif;
             color: #2D3C4B;
-            background: #52b7c1 url('paper-background.png') repeat center center fixed;
+            background: #52b7c1 url('paper-background.jpeg') repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             display: flex;
@@ -168,6 +168,7 @@
         button {
             background: #2D3C4B;
             color: white;
+            font-size: 1.1em;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -234,6 +235,11 @@
           font-size: 1.2em;
         }
 
+        .social-media p {
+          padding: 0;
+          margin: 0;
+        }
+
         .social-media a:hover {
           background: #ffffff;
           border-radius: 7px;
@@ -244,6 +250,14 @@
             width: 20px;
             height: 20px;
             margin-right: 3px;
+        }
+
+        .social-media p img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
         }
 
         /* Footer */
@@ -278,18 +292,50 @@
           margin: 0;
         }
 
+        footer a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+        }
+
         footer a:hover {
           color: #bec1c7;
         }
 
     /* – – – – – – Responsive Design – – – – – – */
-    @media (max-width: 1050px) {
-      .headline h1 {
-        font-size: 2.3em;
+    @media (max-width: 1000px) {
+      #logo-text {
+        font-size: 1em;
+      }
+
+      .social-media a {
+        font-size: 1em;
       }
 
       .below-image-text {
-        font-size: 1.5em;
+        font-size: 1.2em;
+      }
+
+      .headline h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+          font-size: 1.2em;
+      }
+
+      label {
+        font-size: 1em;
+      }
+
+      input, textarea {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
       }
     }
 
@@ -326,15 +372,15 @@
 </head>
 <body>
     <div class="logo">
-      <a id="logo-text" href="./index.html">Pascal Mundt</a>
+      <a id="logo-text" href="./index">Pascal Mundt</a>
     </div>
 
-    <a class="back-button" href="./index.html">
-        <img src="back-arrow.png" alt="Zurück">Startseite
+    <a class="back-button" href="./index">
+        <img src="back-arrow.svg" alt="Zurück">Startseite
     </a>
 
     <div class="head">
-      <img src="kontakt.png" alt="Kontakt">
+      <img src="kontakt-banner.jpeg" alt="Kontakt">
       <div class="headline">
         <h1>Kontakt</h1>
       </div>
@@ -378,13 +424,13 @@
 
         <div class="social-media">
           <a href="https://instagram.com/pascal.mundt">
-                <img src="instagram-icon-dark.png" alt="Instagram-Icon">@pascal.mundt ↗
+                <img src="instagram-icon.svg" alt="Instagram-Icon"><p>@pascal.mundt <img src="link.svg" alt="link"></p>
           </a>
           <a href="https://facebook.com/pascal.mundt.fb">
-                <img src="facebook-icon-dark.png" alt="Facebook-Icon">/pascal.mundt.fb ↗
+                <img src="facebook-icon.svg" alt="Facebook-Icon"><p>/pascal.mundt.fb <img src="link.svg" alt="link"></p>
           </a>
           <a href="https://de.linkedin.com/in/pascal-mundt">
-            <img src="linkedin-icon-dark.png" alt="LinkedIn-Icon">/pascal-mundt ↗
+            <img src="linkedin-icon.svg" alt="LinkedIn-Icon"><p>/pascal-mundt <img src="link.svg" alt="link"></p>
           </a>
         </div>
     </div>
@@ -393,10 +439,10 @@
       <div class="footer-content">
         <p>&copy; Pascal Mundt</p>
         <div class="footer-links">
-          <a href="./ueber-mich.html">Über mich</a>
-          <a href="./kontakt.html">Kontakt</a>
-          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg ↗</a>
-          <a href="./impressum.html">Impressum</a>
+          <a href="./ueber-mich">Über mich</a>
+          <a href="./kontakt">Kontakt</a>
+          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg <img src="link.svg" alt="link"></a>
+          <a href="./impressum">Impressum</a>
         </div>
       </div>
     </footer>
