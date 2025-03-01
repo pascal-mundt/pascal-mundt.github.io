@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            color: #2D3C4B;
+            background: #52b7c1 url('paper-background.png') repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+          background: white;
+          position: fixed;
+          top: 0px;
+          right: 50px;
+          text-align: center;
+          padding: 2px 10px;
+          z-index: 1000;
+        }
+
+        #logo-text {
+          color: #2D3C4B;
+          font-weight: bold;
+          padding: 0px;
+          font-size: 1.2em;
+        }
+
+        .logo:hover {
+          background: #2D3C4B;
+        }
+
+        #logo-text:hover{
+          color: white;
+        }
+
+        .back-button {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 999;
+          color: #ffffff;
+          font-weight: bold;
+          font-size: 0.9em;
+          text-decoration: none;
+          padding: 10px 15px;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .back-button img {
+          height: 20px;
+          width: 20px;
+          margin-right: 5px;
+        }
+
+        .back-button:hover {
+          background: #2D3C4B;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 120px auto 60px;
+            flex: 1;
+        }
+
+        h1 {
+            background: #2D3C4B;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        a {
+         text-decoration: none;
+         color: #2D3C4B;
+        }
+
+        .container a:hover {
+          text-decoration: underline;
+        }
+
+        .container p {
+          margin: 15px 0;
+        }
+
+        .contact {
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .contact p {
+            margin: 0 40px 0 0;
+        }
+
+        #email {
+          margin: 22px 0 0 0;
+        }
+
+        .text-lang {
+          text-align: justify;
+        }
+
+        .social-media {
+          margin: 40px 0;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .social-media a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 10px;
+        }
+
+        .social-media a:hover {
+          background: #2D3C4B;
+          text-decoration: none;
+        }
+
+        .social-media a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+        }
+
+        #stand {
+          font-size: 0.7em;
+          color: white;
+        }
+
+        /* Footer */
+        footer {
+          margin-top: auto;
+          padding: 22px 0;
+          background: #2D3C4B;
+          font-size: 0.9em;
+          display: flex;
+          justify-content: center;
+        }
+        .footer-content {
+          width: 80%;
+          max-width: 800px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        footer p {
+          color: #737986;
+          font-weight: bold;
+          padding-left: 10px;
+        }
+
+        footer a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          padding-left: 10px;
+        }
+
+        footer a:hover {
+          color: #bec1c7;
+        }
+
+    /* – – – – – – Responsive Design – – – – – – */
+        @media (max-width: 650px) {
+          .footer-content,
+          .footer-links {
+            display: flex;
+            flex-direction: column;
+          }
+
+          footer p {
+            margin: 0 0 10px 0;
+          }
+
+          footer a {
+            line-height: 2em;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+      <a id="logo-text" href="./index.html">Pascal Mundt</a>
+    </div>
+    <a class="back-button" href="./index.html">
+        <img src="back-arrow.png" alt="Zurück">Startseite
+    </a>
+    <div class="container">
+        <h1>Impressum</h1>
+        <p><strong>Dieses Impressum gilt für alle meine Internetauftritte.</strong></p>
+        <p>Darunter fallen insbesondere meine Konten auf:<br>
+           <strong>Facebook: /pascal.mundt.fb </strong>(<a href="https://facebook.com/pascal.mundt.fb">facebook.com/pascal.mundt.fb ↗</a>) und<br>
+           <strong>Instagram: @pascal.mundt </strong> (<a href="https://instagram.com/pascal.mundt">instagram.com/pascal.mundt ↗</a>) sowie<br>
+           <strong>meine Webseite: <a href="https://pascal-mundt.github.io">https://pascal-mundt.github.io</a></strong>.
+        </p>
+        <p>Verantwortlich für dieses Angebot gemäß § 5 TMG / § 18 MStV:</p>
+        <div class="contact">
+          <p><strong>Pascal Mundt</strong><br>
+             c/o CDU Oranienburg<br>
+             Südcenter Aufgang A<br>
+             Berliner Straße 119-125<br>
+             16515 Oranienburg<br>
+          </p>
+          <p id="email">E-Mail: <a href="mailto:pascal.mundt@mail.de?subject=Impressum">pascal.mundt@mail.de</a></p>
+        </div>
+        <p class="text-lang">Bei dem Inhalt meiner Internetauftritte handelt es sich um urheberrechtlich geschützte Werke. Ich gestatte die Übernahme von Texten in Datenbestände, die ausschließlich für den privaten, nicht kommerziellen Gebrauch eines Nutzers bestimmt sind. Die Übernahme und Nutzung der Daten zu anderen Zwecken bedarf der schriftlichen Zustimmung.</p>
+        <p style="margin: 3px 0;"><strong>Haftungshinweis:</strong></p>
+        <p style="margin: 3px 0;" class="text-lang">Auf meinen Accounts können externe Inhalte, wie andere Internetseiten, verlinkt sein, auf deren Inhalt ich keinen Einfluss habe; für den Inhalt ist ausschließlich der Betreiber der jeweiligen Webseite verantwortlich. Trotz der Überprüfung der Inhalte im gesetzlich gebotenen Rahmen kann ich daher keine Verantwortung für den Inhalt dieser Links bzw. der verlinkten Seite übernehmen.</p>
+        <div class="social-media">
+          <a href="https://instagram.com/pascal.mundt">
+                <img src="instagram-icon.png" alt="Instagram-Icon">@pascal.mundt ↗
+          </a>
+          <a href="https://facebook.com/pascal.mundt.fb">
+                <img src="facebook-icon.png" alt="Facebook-Icon">/pascal.mundt.fb ↗
+          </a>
+          <a href="https://de.linkedin.com/in/pascal-mundt">
+            <img src="linkedin-icon.png" alt="LinkedIn-Icon">/pascal-mundt ↗
+          </a>
+        </div>
+        <p id="stand">Stand: März 2025</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Pascal Mundt</p>
+        <div class="footer-links">
+          <a href="./ueber-mich.html">Über mich</a>
+          <a href="./kontakt.html">Kontakt</a>
+          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg ↗</a>
+          <a href="./impressum.html">Impressum</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

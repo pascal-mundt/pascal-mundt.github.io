@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startseite</title>
+  <style>
+    /* Basis-Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Grundlayout */
+    body {
+      font-family: Inter, Arial, sans-serif;
+      color: #2D3C4B;
+      background: #52b7c1 url('paper-background.png') repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Logo oben rechts */
+    .logo {
+      background: white;
+      position: fixed;
+      top: 0px;
+      right: 50px;
+      text-align: center;
+      padding: 2px 10px;
+      z-index: 1000;
+    }
+    #logo-text {
+      color: #2D3C4B;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .logo:hover {
+      background: #2D3C4B;
+    }
+    #logo-text:hover {
+      color: white;
+    }
+
+    /* Head */
+    .head {
+      position: relative;
+      text-align: left;
+    }
+    .head img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .headline {
+      position: absolute;
+      bottom: 0px;
+      margin: auto;
+      margin-right: 30px;
+      left: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 99;
+    }
+
+    .headline h1{
+      padding: 5px;
+      color: white;
+      font-size: 3em;
+      background: #2D3C4B;
+      white-space: normal;
+      overflow-wrap: break-word;
+      display: inline;
+    }
+
+    #hl-h1-1 {
+      padding-left: 15px;
+    }
+
+    #hl-h1-2 {
+      padding-right: 15px;
+    }
+
+    .below-image {
+      width: 80%;
+      margin: 0 auto 5vh 10%;
+    }
+
+    .below-image-text {
+      padding: 5px 15px;
+      margin: 0;
+      color: #2D3C4B;
+      font-weight: bold;
+      font-size: 1.8rem;
+      background-color: #f2f8fa9c;
+      display: inline-block;
+    }
+
+    /* Haupt-Container */
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto 60px;
+      flex: 1;
+    }
+
+    /* Hero-Bereich */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .hero-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .hero-core {
+      background: #2D3C4B;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 0;
+      width: 100%;
+      max-width: 230px;
+    }
+
+    .hero-core img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    .hero-left h2 {
+      margin: 10px 0 0;
+      text-align: center;
+      white-space: nowrap;
+      color: #ffffff;
+    }
+    .hero-left p {
+      margin: 0;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
+      color: #bec1c7;
+    }
+
+    /* Social Media */
+    .social-media {
+      background: #2D3C4B;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px;
+      margin: 30px 0 0 0;
+      width: 100%;
+      max-width: 230px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    .socials-head {
+      text-align: left;
+      margin: -40px auto 5px -35px;
+    }
+
+    .socials-head h2 {
+      color: #2D3C4B;
+      font-size: 1.8em;
+      background: #ffffff;
+      padding: 5px 15px;
+      display: inline-block;
+    }
+
+    .social-media a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin: 3px;
+      padding: 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .social-media a:hover {
+      background: #52b7c1;
+      transition: background 0.3s ease;
+    }
+    .social-media a img {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+
+    .hero-right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #2D3C4B;
+    }
+
+    /* Link-Stile */
+    a {
+      color: #2D3C4B;
+      text-decoration: none;
+    }
+
+    /* Card-Design */
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      position: relative;
+      margin: 15px;
+
+      /* Für Hover-Animation */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      /* Scroll-Animation: Startzustand */
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    /* Wenn Card sichtbar wird (per IntersectionObserver) */
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hover-Effekt: Card hebt sich leicht an */
+    .card-link:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      background: #2D3C4B;
+      font-size: 2em;
+      color: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      margin: -20px 0 15px -35px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+      text-align: left;
+    }
+    .card p {
+      text-align: justify;
+      font-size: 1.2em;
+    }
+
+    .card img {
+      width: 100%;
+    }
+
+    .cdu-links {
+      margin: 5px auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .cdu-links a {
+      text-decoration: none;
+      color: #2D3C4B;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 5px 12px;
+      margin: 10px 5px;
+      border-radius: 5px;
+      font-size: 1.2em;
+      background: #ddeef1;
+    }
+
+    .cdu-links a:hover {
+      background: #a7d5dc;
+      transition: background 0.3s ease;
+    }
+
+    .cdu-links a img {
+      width: 25px;
+      height: 25px;
+      margin-right: 8px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      padding: 22px 0;
+      background: #2D3C4B;
+      font-size: 0.9em;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-content {
+      width: 80%;
+      max-width: 800px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer p {
+      color: #737986;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    footer a:hover {
+      color: #bec1c7;
+    }
+
+    /* ========== Responsive-Anpassungen ========== */
+    @media (max-width: 1050px) {
+      .headline h1 {
+        font-size: 2.3em;
+      }
+
+      .below-image-text {
+        font-size: 1.5em;
+      }
+    }
+
+    @media (max-width: 970px) {
+      .head {
+        position: relative;
+        overflow: hidden;
+        height: 274px;
+      }
+
+      .head img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .footer-content,
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer p {
+        margin: 0 0 10px 0;
+      }
+
+      footer a {
+        line-height: 2em;
+      }
+    }
+
+    @media (max-width: 773px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-left {
+        margin: 0;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .hero-core {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: calc(100% - 30px);
+        max-width: none;
+      }
+
+      .social-media {
+        justify-content: left;
+        height: 100%;
+        margin: auto;
+        margin-left: 45px;
+        text-align: left;
+        padding: 43px 10px 25px;
+      }
+
+      .socials-head {
+        padding: 15px 0 5px;
+      }
+
+      .hero-core p {
+        text-align: center;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+      .hero-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        min-width: 235px;
+      }
+
+      .social-media {
+        width: 95%;
+        max-width: none;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        flex-direction: row;
+      }
+
+      .socials-head {
+        width: 100%;
+      }
+
+      .hero-core {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+
+      .hero-core img {
+        margin-bottom: 10px;
+      }
+
+      .hero-core div {
+        text-align: center;
+      }
+
+      .hero-core h2,
+      .hero-core p {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 498px) {
+      #hl-h1-2 {
+        padding-left: 15px;
+      }
+
+      #hl-h1-1 {
+        padding-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <a id="logo-text" href="./index.html">Pascal Mundt</a>
+  </div>
+
+  <!-- Banner -->
+  <div class="head">
+  <img src="schloss-banner.png" alt="Für Oranienburgs Zukunft">
+  <div class="headline">
+    <h1 id="hl-h1-1">Herzlich </h1><h1 id="hl-h1-2">willkommen!</h1>
+  </div>
+  </div>
+  <div class="below-image">
+    <p class="below-image-text">
+      Erfahre hier mehr über mich, meine Arbeit oder kontaktiere mich.
+    </p>
+  </div>
+
+  <!-- Inhalt -->
+  <div class="container">
+    <div class="hero">
+      <!-- Linke Spalte (Hero-Left) -->
+      <div class="hero-left">
+        <!-- Hero-Core-Box -->
+        <div class="hero-core">
+          <img src="profilbild.png" alt="Profilbild Pascal Mundt">
+          <div>
+            <h2>Pascal Mundt</h2>
+            <p>Stadtverordneter</p>
+          </div>
+        </div>
+        <!-- Social Media Links -->
+        <div class="social-media">
+          <div class="socials-head"><h2>Socials</h2></div>
+          <a href="https://instagram.com/pascal.mundt">
+            <img src="instagram-icon.png" alt="Instagram-Logo">@pascal.mundt
+          </a>
+          <a href="https://facebook.com/pascal.mundt.fb">
+            <img src="facebook-icon.png" alt="Facebook-Logo">/pascal.mundt.fb
+          </a>
+          <a href="https://de.linkedin.com/in/pascal-mundt">
+            <img src="linkedin-icon.png" alt="LinkedIn-Logo">/pascal-mundt
+          </a>
+        </div>
+      </div>
+
+      <!-- Rechte Spalte (Hero-Right) -->
+      <div class="hero-right">
+<!--    Card 1: Aktuelles -->
+        <div class="card">
+          <img src="aktuelles.png" alt="Neuigkeiten">
+          <h2>Aktuelles</h2>
+          <p>Aktuelle Themen:</p>
+        </div>
+
+        <!-- Card 2: Über mich (verlinkt) -->
+        <a href="./ueber-mich.html">
+          <div class="card card-link">
+            <img src="ehrenamt.png" alt="Über mich">
+            <h2>Über mich</h2>
+            <p>
+              Ich bin Pascal Mundt, Stadtverordneter in Oranienburg und
+              engagiere mich in der Kommunalpolitik. Erfahre hier mehr über mich. ↗
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 3: Kontakt (verlinkt) -->
+        <a href="./kontakt.html">
+          <div class="card card-link">
+            <img src="kontakt-key.png" alt="Kontakt">
+            <h2>Kontakt</h2>
+            <p>
+              Haben Sie Fragen, Anregungen oder etwas anderes?
+              Kontaktieren Sie mich gern. ↗
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 4: CDU Oranienburg -->
+        <div class="card">
+          <img src="fraktion.png" alt="CDU Fraktion Oranienburg">
+          <h2>CDU Oranienburg</h2>
+          <p>Erfahre mehr über die CDU und unsere Fraktion in Oranienburg:</p>
+            <div class="cdu-links">
+              <a href="https://www.cdu-oranienburg.de">
+                <img src="web-icon-dark.png" alt="cdu-oranienburg.de">Webseite ↗
+              </a>
+              <a href="https://www.cdu-oranienburg.de">
+                <img src="facebook-icon-dark.png" alt="Facebook-Icon">Facebook ↗
+              </a>
+              <a href="https://instagram.com/cdu.oranienburg">
+                <img src="instagram-icon-dark.png" alt="Instagram-Icon">Instagram ↗
+              </a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Pascal Mundt</p>
+      <div class="footer-links">
+        <a href="./ueber-mich.html">Über mich</a>
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="https://www.cdu-oranienburg.de">CDU Oranienburg ↗</a>
+        <a href="./impressum.html">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IntersectionObserver für Card-Einblende-Effekt -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>
