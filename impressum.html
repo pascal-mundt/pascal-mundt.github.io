@@ -14,7 +14,7 @@
         body {
             font-family: Inter, Arial, sans-serif;
             color: #2D3C4B;
-            background: #52b7c1 url('paper-background.png') repeat center center fixed;
+            background: #52b7c1 url('paper-background.jpeg') repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             display: flex;
@@ -136,6 +136,12 @@
           align-items: center;
           gap: 5px;
           padding: 10px;
+          margin: 8px 8px;
+        }
+
+        .social-media p {
+          padding: 0;
+          margin: 0;
         }
 
         .social-media a:hover {
@@ -147,6 +153,14 @@
             width: 20px;
             height: 20px;
             margin-right: 3px;
+        }
+
+        .social-media p img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
         }
 
         #stand {
@@ -185,6 +199,14 @@
           padding-left: 10px;
         }
 
+        footer a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+        }
+
         footer a:hover {
           color: #bec1c7;
         }
@@ -212,7 +234,7 @@
       <a id="logo-text" href="./index.html">Pascal Mundt</a>
     </div>
     <a class="back-button" href="./index.html">
-        <img src="back-arrow.png" alt="Zurück">Startseite
+        <img src="back-arrow.svg" alt="Zurück">Startseite
     </a>
     <div class="container">
         <h1>Impressum</h1>
@@ -237,13 +259,13 @@
         <p style="margin: 3px 0;" class="text-lang">Auf meinen Accounts können externe Inhalte, wie andere Internetseiten, verlinkt sein, auf deren Inhalt ich keinen Einfluss habe; für den Inhalt ist ausschließlich der Betreiber der jeweiligen Webseite verantwortlich. Trotz der Überprüfung der Inhalte im gesetzlich gebotenen Rahmen kann ich daher keine Verantwortung für den Inhalt dieser Links bzw. der verlinkten Seite übernehmen.</p>
         <div class="social-media">
           <a href="https://instagram.com/pascal.mundt">
-                <img src="instagram-icon.png" alt="Instagram-Icon">@pascal.mundt ↗
+                <img src="instagram-icon.svg" alt="Instagram-Icon"><p>@pascal.mundt <img src="link.svg" alt="link"></p>
           </a>
           <a href="https://facebook.com/pascal.mundt.fb">
-                <img src="facebook-icon.png" alt="Facebook-Icon">/pascal.mundt.fb ↗
+                <img src="facebook-icon.svg" alt="Facebook-Icon"><p>/pascal.mundt.fb <img src="link.svg" alt="link"></p>
           </a>
           <a href="https://de.linkedin.com/in/pascal-mundt">
-            <img src="linkedin-icon.png" alt="LinkedIn-Icon">/pascal-mundt ↗
+            <img src="linkedin-icon.svg" alt="LinkedIn-Icon"><p>/pascal-mundt<img src="link.svg" alt="link"></p>
           </a>
         </div>
         <p id="stand">Stand: März 2025</p>
@@ -255,7 +277,7 @@
         <div class="footer-links">
           <a href="./ueber-mich.html">Über mich</a>
           <a href="./kontakt.html">Kontakt</a>
-          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg ↗</a>
+          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg <img src="link.svg" alt="link"></a>
           <a href="./impressum.html">Impressum</a>
         </div>
       </div>
