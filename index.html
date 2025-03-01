@@ -268,7 +268,6 @@
     .card p {
       text-align: justify;
       font-size: 1.2em;
-      display: inline;
     }
 
     .card img {
@@ -299,18 +298,18 @@
       transition: background 0.3s ease;
     }
 
-    .cdu-social-icon {
+    .cdu-links a img {
       width: 25px;
       height: 25px;
       margin-right: 8px;
     }
 
-    .link-img {
+    .card p img {
       width: 15px;
       height: 15px;
       margin: 0;
-      margin-left: 5px;
       display: inline;
+      vertical-align: middle;
     }
 
     /* Footer */
@@ -344,12 +343,20 @@
       padding-left: 10px;
     }
 
+    footer a img {
+      width: 15px;
+      height: 15px;
+      margin: 0;
+      display: inline;
+      vertical-align: middle;
+    }
+
     footer a:hover {
       color: #bec1c7;
     }
 
     /* ========== Responsive-Anpassungen ========== */
-    @media (max-width: 1200 px) {
+    @media (max-width: 1200px) {
       #logo-text {
         font-size: 1em;
       }
@@ -371,16 +378,12 @@
       }
 
       .below-image-text {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       .headline h1 {
-        font-size: 2.3em;
+        font-size: 2em;
       }
-    }
-    
-    @media (max-width: 1050px) {
-      
     }
 
     @media (max-width: 970px) {
@@ -580,7 +583,7 @@
             <h2>Über mich</h2>
             <p>
               Ich bin Pascal Mundt, Stadtverordneter in Oranienburg und
-              engagiere mich in der Kommunalpolitik. Erfahre hier mehr über mich. <img class="link-img" src="link-dark.svg" alt="link">
+              engagiere mich in der Kommunalpolitik. Erfahre hier mehr über mich. <img src="link-dark.svg" alt="link">
             </p>
           </div>
         </a>
@@ -591,8 +594,7 @@
             <img src="kontakt.jpeg" alt="Kontakt">
             <h2>Kontakt</h2>
             <p>
-              Haben Sie Fragen, Anregungen oder etwas anderes?
-              Kontaktieren Sie mich gern. <img class="link-img" src="link-dark.svg" alt="link">
+              Haben Sie Fragen, Anregungen oder etwas anderes? Kontaktieren Sie mich gern. <img src="link-dark.svg" alt="link">
             </p>
           </div>
         </a>
@@ -604,13 +606,16 @@
           <p>Erfahre mehr über die CDU und unsere Fraktion in Oranienburg:</p>
             <div class="cdu-links">
               <a href="https://www.cdu-oranienburg.de">
-                <img class="cdu-social-icon" src="web-icon-dark.svg" alt="cdu-oranienburg.de">Webseite <img class="link-img" src="link-dark.svg" alt="link">
+                <img src="web-icon-dark.svg" alt="cdu-oranienburg.de">Webseite <img style="width: 20px;
+                height: 20px; margin: 0; margin-left: 5px; display: inline;" src="link-dark.svg" alt="link">
               </a>
               <a href="https://www.cdu-oranienburg.de">
-                <img class="cdu-social-icon" src="facebook-icon-dark.svg" alt="Facebook-Icon">Facebook <img class="link-img" src="link-dark.svg" alt="link">
+                <img src="facebook-icon-dark.svg" alt="Facebook-Icon">Facebook <img style="width: 20px;
+                height: 20px; margin: 0; margin-left: 5px; display: inline;" src="link-dark.svg" alt="link">
               </a>
               <a href="https://instagram.com/cdu.oranienburg">
-                <img class="cdu-social-icon" src="instagram-icon-dark.svg" alt="Instagram-Icon">Instagram <img class="link-img" src="link-dark.svg" alt="link">
+                <img src="instagram-icon-dark.svg" alt="Instagram-Icon">Instagram <img style="width: 20px;
+                height: 20px; margin: 0; margin-left: 5px; display: inline;" src="link-dark.svg" alt="link">
               </a>
             </div>
         </div>
@@ -626,7 +631,7 @@
       <div class="footer-links">
         <a href="./ueber-mich">Über mich</a>
         <a href="./kontakt">Kontakt</a>
-        <a href="https://www.cdu-oranienburg.de">CDU Oranienburg <img class="link-img" src="link.svg" alt="link"></a>
+        <a href="https://www.cdu-oranienburg.de">CDU Oranienburg <img src="link.svg" alt="link"></a>
         <a href="./impressum">Impressum</a>
       </div>
     </div>
