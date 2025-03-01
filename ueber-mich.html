@@ -15,7 +15,7 @@
     body {
       font-family: Inter, Arial, sans-serif;
       color: #2D3C4B;
-      background: #52b7c1 url('paper-background.png') repeat center center ;
+      background: #52b7c1 url('paper-background.jpeg') repeat center center ;
       background-size: cover;
       min-height: 100vh;
     }
@@ -214,6 +214,11 @@
       margin: 0;
     }
 
+    .social-media p {
+          padding: 0;
+          margin: 0;
+        }
+
     .social-media a:hover {
       background: #ffffff;
       border-radius: 7px;
@@ -225,6 +230,14 @@
         height: 20px;
         margin-right: 3px;
     }
+
+    .social-media p img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+        }
 
     /* Footer */
     footer {
@@ -261,7 +274,41 @@
       color: #bec1c7;
     }
 
+    footer a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+        }
+
 /* – – – – – – Responsive Design – – – – – – */
+
+    @media (max-width: 1000px) {
+      #logo-text {
+        font-size: 1em;
+      }
+
+      .card p {
+        font-size: 1em;
+      }
+
+      .hero-left p {
+        font-size: 1em;
+      }
+
+      .social-media a {
+        font-size: 1em;
+      }
+
+      .below-image-text {
+        font-size: 1.2em;
+      }
+
+      .headline h1 {
+        font-size: 2em;
+      }
+    }
     @media (max-width: 650px) {
       .footer-content,
       .footer-links {
@@ -323,16 +370,16 @@
 </head>
 <body>
   <div class="logo">
-    <a id="logo-text" href="./index.html">Pascal Mundt</a>
+    <a id="logo-text" href="./index">Pascal Mundt</a>
   </div>
 
-  <a class="back-button" href="./index.html">
-      <img src="back-arrow.png" alt="Zurück">Startseite
+  <a class="back-button" href="./index">
+      <img src="back-arrow.svg" alt="Zurück">Startseite
   </a>
 
   <!-- head-Bereich -->
   <div class="head">
-  <img src="profil-banner.png" alt="Für Oranienburgs Zukunft">
+  <img src="profil-banner.jpeg" alt="Für Oranienburgs Zukunft">
   <div class="headline">
     <h1 id="hl-h1-1">Über </h1><h1 id="hl-h1-2">mich</h1>
   </div>
@@ -348,7 +395,7 @@
     <div class="card-grid">
       <!-- Rubrik 1: Meine Werte -->
       <div class="card">
-        <img src="werte.png" alt="Meine Werte">
+        <img src="werte.jpeg" alt="Meine Werte">
         <h2>Meine Werte</h2>
         <p>
           Ich engagiere mich für unseren <strong>demokratischen Rechtsstaat</strong>, der Leistung anerkennt und das gesellschaftliche Miteinander stärkt. Mein objektiver Gerechtigkeitssinn, genauso wie <strong>gesellschaftlicher Zusammenhalt</strong> und <strong>Bildung</strong> sind für mich zentrale Werte, die mein Engagement leiten.
@@ -357,7 +404,7 @@
 
       <!-- Rubrik 2: Beruflich -->
       <div class="card">
-        <img src="beruflich.png" alt="Beruflich">
+        <img src="beruflich.jpeg" alt="Beruflich">
         <h2>Beruflich</h2>
         <p>
           Seit Herbst 2020 studiere ich Jura an der Freien Universität Berlin und habe meinen <strong>Bachelor of Laws (LL.B.)</strong> erworben. Während meines Studiums habe ich mehr als drei Jahren in einer international tätigen <strong>Kanzlei</strong> gearbeitet und lege nun meine Staatsexamina ab. Mehr über meinen beruflichen Werdegang findest du auf <strong><a href="https://de.linkedin.com/in/pascal-mundt">LinkedIn</a></strong>.
@@ -366,7 +413,7 @@
 
       <!-- Rubrik 3: Ehrenamt -->
       <div class="card">
-        <img src="ehrenamt.png" alt="Ehrenamt-Collage">
+        <img src="ehrenamt.jpeg" alt="Ehrenamt-Collage">
         <h2>Ehrenamt</h2>
         <p>
           Seit Juli 2024 bin ich <strong>Stadtverordneter</strong> und erster stellvertretender Vorsitzender der Stadtverordnetenversammlung in Oranienburg. Mein politisches Engagement begann 2019 in der CDU, seit 2022 bin ich auch in der Jungen Union aktiv. Besonders setze ich mich für Themen wie <strong>Stadtentwicklung</strong>, <strong>junge Positionen</strong> und den <strong>Austausch zwischen Generationen</strong> ein.
@@ -375,7 +422,7 @@
 
       <!-- Rubrik 4: Privat -->
       <div class="card">
-        <img src="privat.png" alt="Fotografieren">
+        <img src="privat.jpeg" alt="Fotografieren">
         <h2>Privat</h2>
         <p>
           Zum Ausgleich gehe ich in meiner Freizeit gern <strong>schwimmen</strong>, halte besondere Momente mit der <strong>Kamera</strong> fest und lasse mich von der einen oder anderen <strong>Serie mitreißen</strong>. Außerdem verbringe ich viel Zeit mit meiner <strong>Familie</strong> und meinen Freunden.
@@ -383,25 +430,25 @@
       </div>
     </div>
     <div class="social-media">
-      <a href="https://instagram.com/pascal.mundt">
-            <img src="instagram-icon-dark.png" alt="Instagram-Icon">@pascal.mundt ↗
-      </a>
-      <a href="https://facebook.com/pascal.mundt.fb">
-            <img src="facebook-icon-dark.png" alt="Facebook-Icon">/pascal.mundt.fb ↗
-      </a>
-      <a href="https://de.linkedin.com/in/pascal-mundt">
-        <img src="linkedin-icon-dark.png" alt="LinkedIn-Icon">/pascal-mundt ↗
-      </a>
+          <a href="https://instagram.com/pascal.mundt">
+                <img src="instagram-icon-dark.svg" alt="Instagram-Icon"><p>@pascal.mundt <img src="link-dark.svg" alt="link"></p>
+          </a>
+          <a href="https://facebook.com/pascal.mundt.fb">
+                <img src="facebook-icon-dark.svg" alt="Facebook-Icon"><p>/pascal.mundt.fb <img src="link-dark.svg" alt="link"></p>
+          </a>
+          <a href="https://de.linkedin.com/in/pascal-mundt">
+            <img src="linkedin-icon-dark.svg" alt="LinkedIn-Icon"><p>/pascal-mundt <img src="link-dark.svg" alt="link"></p>
+          </a>
+        </div>
     </div>
   </section>
   <footer>
     <div class="footer-content">
       <p>&copy; Pascal Mundt</p>
       <div class="footer-links">
-        <a href="./ueber-mich.html">Über mich</a>
-        <a href="./kontakt.html">Kontakt</a>
-        <a href="https://www.cdu-oranienburg.de">CDU Oranienburg ↗</a>
-        <a href="./impressum.html">Impressum</a>
+        <a href="./kontakt">Kontakt</a>
+        <a href="https://www.cdu-oranienburg.de">CDU Oranienburg<img src="link.svg" alt="link"></a>
+        <a href="./impressum">Impressum</a>
       </div>
     </div>
   </footer>
