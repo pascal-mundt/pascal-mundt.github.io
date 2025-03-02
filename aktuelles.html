@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktuelles – Pascal Mundt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Arial", sans-serif;
+            color: #2D3C4B;
+            background: #52b7c1 url('paper-background.jpeg') repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+          background: white;
+          position: fixed;
+          top: 0px;
+          right: 50px;
+          text-align: center;
+          padding: 2px 10px;
+          z-index: 1000;
+        }
+
+        #logo-text {
+          color: #2D3C4B;
+          font-weight: bold;
+          padding: 0px;
+          font-size: 1.2em;
+        }
+
+        .logo:hover{
+          background: #2D3C4B;
+        }
+
+        #logo-text:hover{
+          color: white;
+        }
+
+        .back-button {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 999;
+          color: #ffffff;
+          font-weight: bold;
+          font-size: 0.9em;
+          text-decoration: none;
+          padding: 10px 15px;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .back-button img {
+          height: 20px;
+          width: 20px;
+          margin-right: 5px;
+        }
+
+        .back-button:hover {
+          background: #2D3C4B;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Head */
+        .head {
+          position: relative;
+          text-align: left;
+        }
+        .head img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        .headline {
+          position: absolute;
+          bottom: 0px;
+          margin: auto;
+          margin-right: 30px;
+          left: 10%;
+          display: flex;
+          flex-wrap: wrap;
+          z-index: 99;
+        }
+
+        .headline h1{
+          padding: 5px 15px;
+          color: white;
+          font-size: 3em;
+          font-weight: 800;
+          background: #2D3C4B;
+          white-space: normal;
+          overflow-wrap: break-word;
+          display: inline;
+        }
+
+        .below-image {
+          width: 80%;
+          margin: 0 auto 5vh 10%;
+        }
+
+        .below-image-text {
+          padding: 5px 15px;
+          margin: 0;
+          color: #2D3C4B;
+          font-weight: bold;
+          font-size: 1.8rem;
+          background-color: #f2f8fa9c;
+          display: inline-block;
+        }
+
+        .below-image-text a {
+          white-space: nowrap;
+        }
+
+        .below-image-text a:hover {
+          text-decoration: underline;
+        }
+
+        .below-image-text a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 40px;
+            flex: 1;
+        }
+
+        h2 {
+            background: #ffffff;
+            color: #2D3C4B;
+            font-weight: 800;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 0px;
+            margin: 20px 0;
+            font-size: 1.7em;
+        }
+
+        a {
+          text-decoration: none;
+          color: #2D3C4B;
+          margin: 22px 0 0 0;
+        }
+
+
+        /* ============ Card-Design ============ */
+
+        .card-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          margin: 0;
+          margin-top: 10px;
+          margin-bottom: 40px;
+        }
+
+        .card {
+          background: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          padding: 10px 20px 20px;
+          position: relative;
+
+          /* Animation: Startzustand */
+          opacity: 0;
+          transform: translateY(50px);
+          transition: all 0.6s ease;
+        }
+        /* Wenn Card sichtbar wird */
+        .card.show {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .card img {
+          width: 100%;
+          z-index: 5;
+        }
+
+        .card h2 {
+          background: #2D3C4B;
+          color: #fff;
+          font-size: 2em;
+          font-weight: 800;
+          display: inline-block;
+          padding: 5px 10px;
+          margin: 5px 0 10px -35px; /* Negativer left-margin */
+          box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+          z-index: 100;
+        }
+
+        .card p {
+          line-height: 1.5;
+          text-align: justify;
+          font-size: 1.2em;
+        }
+        .card a {
+          color: #2D3C4B;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+        .card a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          margin-left: 3px;
+          display: inline;
+          vertical-align: middle;
+         }
+
+        .social-media {
+          margin: 20px 0;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          background: #f2f8fa9c;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-media a {
+          text-decoration: none;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          margin: 0;
+          font-size: 1.2em;
+        }
+
+        .social-media p {
+          padding: 0;
+          margin: 0;
+        }
+
+        .social-media a:hover {
+          background: #ffffff;
+          border-radius: 7px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+        }
+
+        .social-media p img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          display: inline;
+          vertical-align: middle;
+        }
+
+        /* Footer */
+        footer {
+          margin-top: auto;
+          padding: 22px 0;
+          background: #2D3C4B;
+          font-size: 0.9em;
+          display: flex;
+          justify-content: center;
+        }
+        .footer-content {
+          width: 80%;
+          max-width: 800px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        footer p {
+          color: #737986;
+          font-weight: bold;
+          padding-left: 10px;
+        }
+
+        footer a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          padding-left: 10px;
+          margin: 0;
+        }
+
+        footer a img {
+          width: 15px;
+          height: 15px;
+          margin: 0;
+          margin-left: 3px;
+          display: inline;
+          vertical-align: middle;
+        }
+
+        footer a:hover {
+          color: #bec1c7;
+        }
+
+    /* – – – – – – Responsive Design – – – – – – */
+    @media (max-width: 1000px) {
+      .social-media a {
+        font-size: 1em;
+      }
+
+      .below-image-text {
+        font-size: 1.2em;
+      }
+
+      .headline h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      label {
+        font-size: 1em;
+      }
+
+      input, textarea {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
+      }
+
+      .contact-text p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 970px) {
+      .head {
+        position: relative;
+        overflow: hidden;
+        height: 274px;
+      }
+
+      .head img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .footer-content,
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer p {
+        margin: 0 0 10px 0;
+      }
+
+      footer a {
+        line-height: 2em;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="logo">
+      <a id="logo-text" href="./index">Pascal Mundt</a>
+    </div>
+
+    <a class="back-button" href="./index">
+        <img src="back-arrow.svg" alt="Zurück">Startseite
+    </a>
+
+    <div class="head">
+      <img src="aktuelles-banner.jpeg" alt="Aktuelle Nachrichten">
+      <div class="headline">
+        <h1>Aktuelles</h1>
+      </div>
+    </div>
+    <div class="below-image">
+      <p class="below-image-text">
+        Alle aktuellen Neuigkeiten findest du hier.<br>
+        Immer sofort informierst bleibst du über Instagram <a href="https://instagram.com/pascal.mundt">@pascal.mundt <img src="link-dark.svg" alt="link"></a>.
+      </p>
+    </div>
+    <div class="container">
+<!--        <h2>Besondere Themen</h2>
+        <div class="card-grid">
+
+          <div class="card">
+             <img src="..." alt="...">
+              <h2>Topic 1</h2>
+              <p>
+                Text
+              </p>
+          </div>
+        </div> -->
+
+        <h2>Neuestes</h2>
+        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9ac701c50811511e97013dbcb6c4e350.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+        <div class="social-media">
+          <a href="https://instagram.com/pascal.mundt">
+                <img src="instagram-icon-dark.svg" alt="Instagram-Icon"><p>@pascal.mundt <img src="link-dark.svg" alt="link"></p>
+          </a>
+          <a href="https://facebook.com/pascal.mundt.fb">
+                <img src="facebook-icon-dark.svg" alt="Facebook-Icon"><p>/pascal.mundt.fb <img src="link-dark.svg" alt="link"></p>
+          </a>
+          <a href="https://de.linkedin.com/in/pascal-mundt">
+            <img src="linkedin-icon-dark.svg" alt="LinkedIn-Icon"><p>/pascal-mundt <img src="link-dark.svg" alt="link"></p>
+          </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Pascal Mundt</p>
+        <div class="footer-links">
+          <a href="./ueber-mich">Über mich</a>
+          <a href="https://www.cdu-oranienburg.de">CDU Oranienburg<img src="link.svg" alt="link"></a>
+          <a href="./kontakt">Kontakt</a>
+          <a href="./impressum">Impressum</a>
+        </div>
+      </div>
+    </footer>
+</body>
+
+<script>
+  // IntersectionObserver: Card beim Scrollen einblenden
+  document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+</html>
