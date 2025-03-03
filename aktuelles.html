@@ -25,6 +25,7 @@
             flex-direction: column;
         }
 
+        /* Logo oben rechts */
         .logo {
           background: white;
           position: fixed;
@@ -33,20 +34,13 @@
           text-align: center;
           padding: 2px 10px;
           z-index: 1000;
-        }
-
-        #logo-text {
           color: #2D3C4B;
           font-weight: bold;
-          padding: 0px;
+          text-decoration: none;
           font-size: 1.2em;
         }
-
-        .logo:hover{
+        .logo:hover {
           background: #2D3C4B;
-        }
-
-        #logo-text:hover{
           color: white;
         }
 
@@ -94,6 +88,7 @@
           position: absolute;
           bottom: 0px;
           margin: auto;
+          margin-left: 15px;
           margin-right: 30px;
           left: 10%;
           display: flex;
@@ -102,46 +97,90 @@
         }
 
         .headline h1{
-          padding: 5px 15px;
-          color: white;
           font-size: 3em;
           font-weight: 800;
+          margin-left: -5px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
+          z-index: 100;
+        }
+
+        .headline h1 span {
           background: #2D3C4B;
-          white-space: normal;
-          overflow-wrap: break-word;
-          display: inline;
+          color: #ffffff;
+          padding: 5px 0px;
+          margin-left: -10px;
+        }
+
+        .headline h1 span::before {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px 7.5px;
+        }
+
+        .headline h1 span::after {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px 7.5px;
         }
 
         .below-image {
           width: 80%;
-          margin: 0 auto 5vh 10%;
+          margin: 0 auto 40px 10%;
         }
 
-        .below-image-text {
-          padding: 5px 15px;
+        .below-image p {
           margin: 0;
-          color: #2D3C4B;
+          margin-left: 10px;
           font-weight: bold;
           font-size: 1.8rem;
-          background-color: #f2f8fa9c;
-          display: inline-block;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
         }
 
-        .below-image-text a {
+        .below-image p span {
+          color: #2D3C4B;
+          background-color: #ddeef1;
+          padding: 5px 0;
+          margin-left: -10px;
+        }
+
+        .below-image p span::before {
+          content: '';
+          background: #ddeef1;
+          padding: 5px;
+        }
+
+        .below-image p span::after {
+          content: '';
+          background: #ddeef1;
+          padding: 5px;
+        }
+
+        .below-image a {
           white-space: nowrap;
+          text-decoration: none;
+          color: #2D3C4B;
+          background: #ddeef1;
         }
 
-        .below-image-text a:hover {
+        .below-image a span {
+          display: inline;
+          vertical-align: middle;
+        }
+
+        .below-image a:hover {
           text-decoration: underline;
         }
 
-        .below-image-text a img {
-          width: 15px;
-          height: 15px;
+        .below-image a img {
+          width: 25px;
+          height: 25px;
           margin: 0;
           display: inline;
           vertical-align: middle;
-
         }
 
         .container {
@@ -152,7 +191,7 @@
             flex: 1;
         }
 
-        h2 {
+        .container h2 {
             background: #ffffff;
             color: #2D3C4B;
             font-weight: 800;
@@ -163,7 +202,7 @@
             font-size: 2em;
         }
 
-        a {
+        .container a {
           text-decoration: none;
           color: #2D3C4B;
           margin: 22px 0 0 0;
@@ -205,15 +244,32 @@
         }
 
         .card h3 {
-          background: #2D3C4B;
-          color: #fff;
-          font-size: 1.8em;
+          font-size: 1.5em;
           font-weight: 800;
-          display: inline-block;
-          padding: 5px 10px;
-          margin: 5px 0 10px -35px; /* Negativer left-margin */
-          box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+          margin: -25px 0 10px -25px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
           z-index: 100;
+        }
+
+        .card h3 span {
+          background: #2D3C4B;
+          color: #ffffff;
+          padding: 5px 0px;
+          margin-left: -10px;
+        }
+
+        .card h3 span::before {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px;
+        }
+
+        .card h3 span::after {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px;
         }
 
         .card p {
@@ -328,35 +384,48 @@
 
     /* – – – – – – Responsive Design – – – – – – */
     @media (max-width: 1000px) {
-      .social-media a {
-        font-size: 1em;
-      }
-
-      .below-image-text {
-        font-size: 1.2em;
-      }
 
       .headline h1 {
-        font-size: 2em;
+        font-size: 2.2em;
       }
 
-      h2 {
+      .below-image p {
+        margin-left: 5px;
+        font-size: 1.3em;
+      }
+
+      .below-image p span {
+        padding: 2.5px 0;
+        margin-left: -5px;
+      }
+
+      .below-image p span::before {
+        padding: 2.5px;
+      }
+
+      .below-image p span::after {
+        padding: 2.5px;
+      }
+
+      .below-image a img {
+        width: 15px;
+        height: 15px;
+      }
+
+      .container h2 {
+        font-weight: 700;
+      }
+
+      .card h3 {
+        font-weight: 700;
         font-size: 1.5em;
       }
 
-      label {
+      .card p {
         font-size: 1em;
       }
 
-      input, textarea {
-        font-size: 1em;
-      }
-
-      button {
-        font-size: 1em;
-      }
-
-      .contact-text p {
+      .social-media a {
         font-size: 1em;
       }
     }
@@ -393,9 +462,9 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-      <a id="logo-text" href="./index">Pascal Mundt</a>
-    </div>
+  <a class="logo" href="./index">
+    <p>Pascal Mundt</p>
+  </a>
 
     <a class="back-button" href="./index">
         <img src="back-arrow.svg" alt="Zurück">Startseite
@@ -404,29 +473,31 @@
     <div class="head">
       <img src="aktuelles-banner.jpeg" alt="Aktuelle Nachrichten">
       <div class="headline">
-        <h1>Aktuelles</h1>
+        <h1><span>Aktuelles</span></h1>
       </div>
     </div>
     <div class="below-image">
-      <p class="below-image-text">
-        Alle aktuellen Neuigkeiten findest du hier.<br>
-        Immer sofort informierst bleibst du über Instagram <a href="https://instagram.com/pascal.mundt">@pascal.mundt <img src="link-dark.svg" alt="link"></a>.
+      <p>
+        <span>Alle</span><span>aktuellen</span><span>Neuigkeiten</span><span>findest</span><span>du</span><span>hier.</span><br>
+        <span>Immer</span><span>sofort</span><span>informiert</span><span>bleibst</span><span>du</span><span>über</span><span>Instagram</span>
+        <span><a href="https://instagram.com/pascal.mundt">@pascal.mundt <img src="link-dark.svg" alt="link"></a>.</span>
       </p>
     </div>
     <div class="container">
-<!--        <h2>Top-Themen</h2>
+<!--
+        <h2><span>Top-Themen</span></h2>
         <div class="card-grid">
 
           <div class="card">
-             <img src="..." alt="...">
-              <h3>Topic 1</h3>
+             <img src="web-icon-dark.svg" alt="...">
+              <h3><span>Topic</span><span>1</span></h3>
               <p>
-                Text
+                Lorem ipsum dolor sit amet
               </p>
           </div>
-        </div> -->
-        
-        <h2>Neuestes</h2>
+        </div>
+-->
+        <h2><span>Neuestes</span></h2>
         <!-- Instagram Feed -->
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-69d7fda1-e3bf-4792-8bcb-b3c466a7992e" data-elfsight-app-lazy></div>
