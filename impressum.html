@@ -25,6 +25,7 @@
             flex-direction: column;
         }
 
+        /* Logo oben rechts */
         .logo {
           background: white;
           position: fixed;
@@ -33,20 +34,13 @@
           text-align: center;
           padding: 2px 10px;
           z-index: 1000;
-        }
-
-        #logo-text {
           color: #2D3C4B;
           font-weight: bold;
-          padding: 0px;
+          text-decoration: none;
           font-size: 1.2em;
         }
-
         .logo:hover {
           background: #2D3C4B;
-        }
-
-        #logo-text:hover{
           color: white;
         }
 
@@ -244,9 +238,9 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-      <a id="logo-text" href="./index.html">Pascal Mundt</a>
-    </div>
+    <a class="logo" href="./index">
+      <p>Pascal Mundt</p>
+    </a>
     <a class="back-button" href="./index">
         <img src="back-arrow.svg" alt="Zurück">Startseite
     </a>
