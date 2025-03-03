@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  
+
   <style>
     /* ============ Grundlayout ============ */
     * {
@@ -24,29 +24,22 @@
       min-height: 100vh;
     }
 
+    /* Logo oben rechts */
     .logo {
       background: white;
-      z-index: 1000;
       position: fixed;
       top: 0px;
       right: 50px;
       text-align: center;
       padding: 2px 10px;
-    }
-
-    #logo-text {
+      z-index: 1000;
       color: #2D3C4B;
       font-weight: bold;
-      padding: 0px;
       text-decoration: none;
       font-size: 1.2em;
     }
-
-    .logo:hover{
+    .logo:hover {
       background: #2D3C4B;
-    }
-
-    #logo-text:hover{
       color: white;
     }
 
@@ -96,6 +89,7 @@
       position: absolute;
       bottom: 0px;
       margin: auto;
+      margin-left: 15px;
       margin-right: 30px;
       left: 10%;
       display: flex;
@@ -104,22 +98,32 @@
     }
 
     .headline h1{
-      padding: 5px;
-      color: white;
       font-size: 3em;
       font-weight: 800;
+      margin-left: -5px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      z-index: 100;
+    }
+
+    .headline h1 span {
       background: #2D3C4B;
-      white-space: normal;
-      overflow-wrap: break-word;
-      display: inline;
+      color: #ffffff;
+      padding: 5px 0px;
+      margin-left: -10px;
     }
 
-    #hl-h1-1 {
-      padding-left: 15px;
+    .headline h1 span::before {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px 7.5px;
     }
 
-    #hl-h1-2 {
-      padding-right: 15px;
+    .headline h1 span::after {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px 7.5px;
     }
 
     .below-image {
@@ -127,14 +131,33 @@
       margin: 0 auto 5vh 10%;
     }
 
-    .below-image-text {
-      padding: 5px 15px;
+    .below-image p {
       margin: 0;
-      color: #2D3C4B;
+      margin-left: 10px;
       font-weight: bold;
       font-size: 1.8rem;
-      background-color: #f2f8fa9c;
-      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .below-image p span {
+      color: #2D3C4B;
+      background-color: #ddeef1;
+      padding: 5px 0;
+      margin-left: -10px;
+    }
+
+    .below-image p span::before {
+      content: '';
+      background: #ddeef1;
+      padding: 5px;
+    }
+
+    .below-image p span::after {
+      content: '';
+      background: #ddeef1;
+      padding: 5px;
     }
 
     /* ============ Container für Rubriken ============ */
@@ -177,15 +200,32 @@
     }
 
     .card h2 {
-      background: #2D3C4B;
-      color: #fff;
       font-size: 2em;
       font-weight: 800;
-      display: inline-block;
-      padding: 5px 10px;
-      margin: -20px 0 15px -35px; /* Negativer left-margin */
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      margin: -25px 0 15px -35px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
       z-index: 100;
+    }
+
+    .card h2 span {
+      background: #2D3C4B;
+      color: #ffffff;
+      padding: 5px 0px;
+      margin-left: -10px;
+    }
+
+    .card h2 span::before {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px;
+    }
+
+    .card h2 span::after {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px;
     }
 
     .card p {
@@ -301,6 +341,33 @@
 /* – – – – – – Responsive Design – – – – – – */
 
     @media (max-width: 1000px) {
+
+      .headline h1 {
+        font-size: 2.3em;
+      }
+
+      .below-image p {
+        margin-left: 5px;
+        font-size: 1.3em;
+      }
+
+      .below-image p span {
+        padding: 2.5px 0;
+        margin-left: -5px;
+      }
+
+      .below-image p span::before {
+        padding: 2.5px;
+      }
+
+      .below-image p span::after {
+        padding: 2.5px;
+      }
+
+      .card h2 {
+        font-weight: 700;
+      }
+
       .card p {
         font-size: 1em;
       }
@@ -311,14 +378,6 @@
 
       .social-media a {
         font-size: 1em;
-      }
-
-      .below-image-text {
-        font-size: 1.2em;
-      }
-
-      .headline h1 {
-        font-size: 2em;
       }
     }
     @media (max-width: 650px) {
@@ -371,9 +430,9 @@
   </style>
 </head>
 <body>
-  <div class="logo">
-    <a id="logo-text" href="./index">Pascal Mundt</a>
-  </div>
+  <a class="logo" href="./index">
+    <p>Pascal Mundt</p>
+  </a>
 
   <a class="back-button" href="./index">
       <img src="back-arrow.svg" alt="Zurück">Startseite
@@ -381,14 +440,14 @@
 
   <!-- head-Bereich -->
   <div class="head">
-  <img src="profil-banner.jpeg" alt="Für Oranienburgs Zukunft">
-  <div class="headline">
-    <h1 id="hl-h1-1">Über </h1><h1 id="hl-h1-2">mich</h1>
-  </div>
+    <img src="profil-banner.jpeg" alt="Für Oranienburgs Zukunft">
+    <div class="headline">
+      <h1><span>Über</span></h1><h1><span>mich</span></h1>
+    </div>
   </div>
   <div class="below-image">
-    <p class="below-image-text">
-      Erfahre mehr über meine Werte, meinen beruflichen Werdegang, mein Ehrenamt und mein Privatleben.
+    <p>
+      <span>Erfahre</span><span>mehr</span><span>über</span><span>meine</span><span>Werte,</span><span>meinen</span><span>beruflichen</span><span>Werdegang,</span><span>mein</span><span>Ehrenamt</span><span>und</span><span>mein</span><span>Privatleben.</span>
     </p>
   </div>
 
@@ -398,7 +457,7 @@
       <!-- Rubrik 1: Meine Werte -->
       <div class="card">
         <img src="werte.jpeg" alt="Meine Werte">
-        <h2>Meine Werte</h2>
+        <h2><span>Meine</span><span>Werte</span></h2>
         <p>
           Ich engagiere mich für unseren <strong>demokratischen Rechtsstaat</strong>, der Leistung anerkennt und das gesellschaftliche Miteinander stärkt. Mein objektiver Gerechtigkeitssinn, genauso wie <strong>gesellschaftlicher Zusammenhalt</strong> und <strong>Bildung</strong> sind für mich zentrale Werte, die mein Engagement leiten.
         </p>
@@ -407,16 +466,16 @@
       <!-- Rubrik 2: Beruflich -->
       <div class="card">
         <img src="beruflich.jpeg" alt="Beruflich">
-        <h2>Beruflich</h2>
+        <h2><span>Beruflich</span></h2>
         <p>
-          Seit Herbst 2020 studiere ich Jura an der Freien Universität Berlin und habe meinen <strong>Bachelor of Laws (LL.B.)</strong> erworben. Während meines Studiums habe ich mehr als drei Jahren in einer international tätigen <strong>Kanzlei</strong> gearbeitet und lege nun meine Staatsexamina ab. Mehr über meinen beruflichen Werdegang findest du auf <strong><a href="https://de.linkedin.com/in/pascal-mundt">LinkedIn<img src="link-dark.svg" alt="link"></a></strong>.
+          Seit Herbst 2020 studiere ich Jura an der Freien Universität Berlin und habe meinen <strong>Bachelor of Laws (LL.B.)</strong> erworben. Während meines Studiums habe ich mehr als drei Jahren in einer international tätigen <strong>Kanzlei</strong> gearbeitet und lege nun meine Staatsexamina ab. Mehr über meinen beruflichen Werdegang findest du auf <span style="white-space:nowrap"><strong><a href="https://de.linkedin.com/in/pascal-mundt">LinkedIn<img src="link-dark.svg" alt="link"></a></strong></span>.
         </p>
       </div>
 
       <!-- Rubrik 3: Ehrenamt -->
       <div class="card">
         <img src="ehrenamt.jpeg" alt="Ehrenamt-Collage">
-        <h2>Ehrenamt</h2>
+        <h2><span>Ehrenamt</span></h2>
         <p>
           Seit Juli 2024 bin ich <strong>Stadtverordneter</strong> und erster stellvertretender Vorsitzender der Stadtverordnetenversammlung in Oranienburg. Mein politisches Engagement begann 2019 in der CDU, seit 2022 bin ich auch in der Jungen Union aktiv. Besonders setze ich mich für Themen wie <strong>Stadtentwicklung</strong>, <strong>junge Positionen</strong> und den <strong>Austausch zwischen Generationen</strong> ein.
         </p>
@@ -425,7 +484,7 @@
       <!-- Rubrik 4: Privat -->
       <div class="card">
         <img src="privat.jpeg" alt="Fotografieren">
-        <h2>Privat</h2>
+        <h2><span>Privat</span></h2>
         <p>
           Zum Ausgleich gehe ich in meiner Freizeit gern <strong>schwimmen</strong>, halte besondere Momente mit der <strong>Kamera</strong> fest und lasse mich von der einen oder anderen <strong>Serie mitreißen</strong>. Außerdem verbringe ich viel Zeit mit meiner <strong>Familie</strong> und meinen Freunden.
         </p>
