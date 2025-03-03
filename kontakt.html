@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+
     <style>
         * {
           box-sizing: border-box;
@@ -25,6 +25,7 @@
             flex-direction: column;
         }
 
+        /* Logo oben rechts */
         .logo {
           background: white;
           position: fixed;
@@ -33,20 +34,13 @@
           text-align: center;
           padding: 2px 10px;
           z-index: 1000;
-        }
-
-        #logo-text {
           color: #2D3C4B;
           font-weight: bold;
-          padding: 0px;
+          text-decoration: none;
           font-size: 1.2em;
         }
-
-        .logo:hover{
+        .logo:hover {
           background: #2D3C4B;
-        }
-
-        #logo-text:hover{
           color: white;
         }
 
@@ -94,6 +88,7 @@
           position: absolute;
           bottom: 0px;
           margin: auto;
+          margin-left: 15px;
           margin-right: 30px;
           left: 10%;
           display: flex;
@@ -102,14 +97,32 @@
         }
 
         .headline h1{
-          padding: 5px 15px;
-          color: white;
           font-size: 3em;
           font-weight: 800;
+          margin-left: -5px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
+          z-index: 100;
+        }
+
+        .headline h1 span {
           background: #2D3C4B;
-          white-space: normal;
-          overflow-wrap: break-word;
-          display: inline;
+          color: #ffffff;
+          padding: 5px 0px;
+          margin-left: -10px;
+        }
+
+        .headline h1 span::before {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px 7.5px;
+        }
+
+        .headline h1 span::after {
+          content: '';
+          background: #2D3C4B;
+          padding: 5px 7.5px;
         }
 
         .below-image {
@@ -117,14 +130,33 @@
           margin: 0 auto 5vh 10%;
         }
 
-        .below-image-text {
-          padding: 5px 15px;
+        .below-image p {
           margin: 0;
-          color: #2D3C4B;
+          margin-left: 10px;
           font-weight: bold;
           font-size: 1.8rem;
-          background-color: #f2f8fa9c;
-          display: inline-block;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
+        }
+
+        .below-image p span {
+          color: #2D3C4B;
+          background-color: #ddeef1;
+          padding: 5px 0;
+          margin-left: -10px;
+        }
+
+        .below-image p span::before {
+          content: '';
+          background: #ddeef1;
+          padding: 5px;
+        }
+
+        .below-image p span::after {
+          content: '';
+          background: #ddeef1;
+          padding: 5px;
         }
 
         .container {
@@ -135,16 +167,35 @@
             flex: 1;
         }
 
-        h2 {
-            background: #ffffff;
-            color: #2D3C4B;
-            font-weight: 800;
-            padding: 5px 10px;
-            display: inline-block;
-            border-radius: 0px;
-            margin: 20px 0;
-            font-size: 1.7em;
+        .container h2 {
+          font-size: 2em;
+          font-weight: 800;
+          margin: 0 0 15px 10px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: left;
+          z-index: 100;
         }
+
+        .container h2 span {
+          background: #ffffff;
+          color: #2D3C4B;
+          padding: 5px 0px;
+          margin-left: -10px;
+        }
+
+        .container h2 span::before {
+          content: '';
+          background: #ffffff;
+          padding: 5px;
+        }
+
+        .container h2 span::after {
+          content: '';
+          background: #ffffff;
+          padding: 5px;
+        }
+
 
         .contact-form {
             background: #f2f8fa9c;
@@ -211,7 +262,7 @@
             font-size: 1.1em;
         }
 
-        a {
+        .container a {
           text-decoration: none;
           color: #2D3C4B;
           margin: 22px 0 0 0;
@@ -313,20 +364,36 @@
 
     /* – – – – – – Responsive Design – – – – – – */
     @media (max-width: 1000px) {
+
+      .headline h1 {
+        font-size: 2.3em;
+      }
+
+      .below-image p {
+        margin-left: 5px;
+        font-size: 1.3em;
+      }
+
+      .below-image p span {
+        padding: 2.5px 0;
+        margin-left: -5px;
+      }
+
+      .below-image p span::before {
+        padding: 2.5px;
+      }
+
+      .below-image p span::after {
+        padding: 2.5px;
+      }
+
       .social-media a {
         font-size: 1em;
       }
 
-      .below-image-text {
-        font-size: 1.2em;
-      }
-
-      .headline h1 {
-        font-size: 2em;
-      }
-
-      h2 {
+      .container h2 {
         font-size: 1.5em;
+        font-weight: 700;
       }
 
       label {
@@ -378,9 +445,9 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-      <a id="logo-text" href="./index">Pascal Mundt</a>
-    </div>
+    <a class="logo" href="./index">
+      <p>Pascal Mundt</p>
+    </a>
 
     <a class="back-button" href="./index">
         <img src="back-arrow.svg" alt="Zurück">Startseite
@@ -389,17 +456,18 @@
     <div class="head">
       <img src="kontakt-banner.jpeg" alt="Kontakt">
       <div class="headline">
-        <h1>Kontakt</h1>
+        <h1><span>Kontakt</span></h1>
       </div>
     </div>
     <div class="below-image">
-      <p class="below-image-text">
-        Haben Sie Fragen, Anregungen oder etwas anderes?
-        Kontaktieren Sie mich gern über dieses Formular per E-Mail.
+      <p>
+        <span>Haben</span><span>Sie</span><span>Fragen,</span><span>Anregungen</span><span>oder</span><span>etwas</span><span>anderes?</span><br>
+        <span>Kontaktieren</span><span>Sie</span><span>mich</span><span>gern</span><span>über</span><span>dieses</span><span>Formular</span><span>per</span><span>E-Mail.</span>
+
       </p>
     </div>
     <div class="container">
-        <h2>Kontakt-Formular</h2>
+        <h2><span>Kontakt-Formular</span></h2>
 
         <form class="contact-form" onsubmit="sendEmail(event)">
             <label for="name">Name</label>
@@ -416,7 +484,7 @@
 
         <div class="contact">
           <div>
-            <h2>Andere Kontaktmöglichkeiten</h2>
+            <h2><span>Andere</span><span>Kontaktmöglichkeiten</span></h2>
           </div>
           <div class="contact-text">
             <p><strong>Pascal Mundt</strong><br>
