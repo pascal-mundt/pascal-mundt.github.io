@@ -36,8 +36,6 @@
       text-align: center;
       padding: 2px 10px;
       z-index: 1000;
-    }
-    #logo-text {
       color: #2D3C4B;
       font-weight: bold;
       text-decoration: none;
@@ -45,8 +43,6 @@
     }
     .logo:hover {
       background: #2D3C4B;
-    }
-    #logo-text:hover {
       color: white;
     }
 
@@ -65,6 +61,7 @@
       position: absolute;
       bottom: 0px;
       margin: auto;
+      margin-left: 15px;
       margin-right: 30px;
       left: 10%;
       display: flex;
@@ -73,22 +70,32 @@
     }
 
     .headline h1{
-      padding: 5px;
-      color: white;
       font-size: 3em;
       font-weight: 800;
+      margin-left: -5px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      z-index: 100;
+    }
+
+    .headline h1 span {
       background: #2D3C4B;
-      white-space: normal;
-      overflow-wrap: break-word;
-      display: inline;
+      color: #ffffff;
+      padding: 5px 0px;
+      margin-left: -10px;
     }
 
-    #hl-h1-1 {
-      padding-left: 15px;
+    .headline h1 span::before {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px 7.5px;
     }
 
-    #hl-h1-2 {
-      padding-right: 15px;
+    .headline h1 span::after {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px 7.5px;
     }
 
     .below-image {
@@ -96,14 +103,33 @@
       margin: 0 auto 5vh 10%;
     }
 
-    .below-image-text {
-      padding: 5px 15px;
+    .below-image p {
       margin: 0;
-      color: #2D3C4B;
+      margin-left: 10px;
       font-weight: bold;
       font-size: 1.8rem;
-      background-color: #f2f8fa9c;
-      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .below-image p span {
+      color: #2D3C4B;
+      background-color: #ddeef1;
+      padding: 5px 0;
+      margin-left: -10px;
+    }
+
+    .below-image p span::before {
+      content: '';
+      background: #ddeef1;
+      padding: 5px;
+    }
+
+    .below-image p span::after {
+      content: '';
+      background: #ddeef1;
+      padding: 5px;
     }
 
     /* Haupt-Container */
@@ -262,17 +288,34 @@
     }
 
     .card h2 {
-      background: #2D3C4B;
       font-size: 2em;
-      color: #fff;
       font-weight: 800;
-      display: inline-block;
-      padding: 5px 10px;
-      margin: -20px 0 15px -35px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-      z-index: 100;
+      margin: -25px 0 15px -35px;
+      display: flex;
+      flex-wrap: wrap;
       text-align: left;
+      z-index: 100;
     }
+
+    .card h2 span {
+      background: #2D3C4B;
+      color: #ffffff;
+      padding: 5px 0px;
+      margin-left: -10px;
+    }
+
+    .card h2 span::before {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px;
+    }
+
+    .card h2 span::after {
+      content: '';
+      background: #2D3C4B;
+      padding: 5px;
+    }
+
     .card p {
       text-align: justify;
       font-size: 1.2em;
@@ -320,6 +363,45 @@
       vertical-align: middle;
     }
 
+    .member-call {
+      background: #a7d5dc;
+      color: #2D3C4B;
+
+    }
+
+    .member-call h2 {
+      margin-left: -25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .member-call h2 span {
+      background: #ffffff;
+      color: #2D3C4B;
+      padding: 5px 0px;
+      margin-left: -10px;
+    }
+
+    .member-call h2 span::before {
+      content: '';
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    .member-call h2 span::after {
+      content: '';
+      background: #ffffff;
+      padding: 5px;
+    }
+
+    .member-links a {
+      background: #ddeef1;
+    }
+
+    .member-links a:hover {
+      background: #ffffff;
+    }
+
     /* Footer */
     footer {
       margin-top: auto;
@@ -329,6 +411,7 @@
       display: flex;
       justify-content: center;
     }
+
     .footer-content {
       width: 80%;
       max-width: 800px;
@@ -366,6 +449,29 @@
 
     /* ========== Responsive-Anpassungen ========== */
     @media (max-width: 1000px) {
+
+      .headline h1 {
+        font-size: 2.2em;
+      }
+
+      .below-image p {
+        margin-left: 5px;
+        font-size: 1.3em;
+      }
+
+      .below-image p span {
+        padding: 2.5px 0;
+        margin-left: -5px;
+      }
+
+      .below-image p span::before {
+        padding: 2.5px;
+      }
+
+      .below-image p span::after {
+        padding: 2.5px;
+      }
+
       .card p {
         font-size: 1em;
       }
@@ -380,14 +486,6 @@
 
       .social-media a {
         font-size: 1em;
-      }
-
-      .below-image-text {
-        font-size: 1.2em;
-      }
-
-      .headline h1 {
-        font-size: 2em;
       }
     }
 
@@ -514,33 +612,23 @@
         text-align: center;
       }
     }
-
-    @media (max-width: 443px) {
-      #hl-h1-1 {
-        padding: 2px 10px;
-      }
-      
-      #hl-h1-2 {
-        padding: 2px 10px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <a id="logo-text" href="./index">Pascal Mundt</a>
-  </div>
+  <a class="logo" href="./index">
+    <p>Pascal Mundt</p>
+  </a>
 
   <!-- Banner -->
   <div class="head">
   <img src="schloss-banner.jpeg" alt="Für Oranienburgs Zukunft">
   <div class="headline">
-    <h1 id="hl-h1-1">Herzlich </h1><h1 id="hl-h1-2">willkommen!</h1>
+    <h1><span>Herzlich</span></h1><h1><span>willkommen!</span></h1>
   </div>
   </div>
   <div class="below-image">
-    <p class="below-image-text">
-      Erfahre hier mehr über mich, meine Arbeit oder kontaktiere mich.
+    <p>
+      <span>Erfahre</span><span>hier</span><span>mehr</span><span>über</span><span>mich,</span><span>meine</span><span>Arbeit</span><span>oder</span><span>kontaktiere</span><span>mich.</span>
     </p>
   </div>
 
@@ -574,12 +662,12 @@
 
       <!-- Rechte Spalte (Hero-Right) -->
       <div class="hero-right">
-        
+
 <!--    Card 1: Aktuelles -->
         <a href="./aktuelles">
           <div class="card card-link">
             <img src="aktuelles-banner.jpeg" alt="Neuigkeiten">
-            <h2>Aktuelles</h2>
+            <h2><span>Aktuelles</span></h2>
             <p>Alle aktuellen Neuigkeiten findest du hier. <img src="link-dark.svg" alt="link">
             </p>
           </div>
@@ -589,7 +677,7 @@
         <a href="./ueber-mich">
           <div class="card card-link">
             <img src="ehrenamt.jpeg" alt="Über mich">
-            <h2>Über mich</h2>
+            <h2><span>Über</span><span>mich</span></h2>
             <p>
               Ich bin Pascal Mundt, Stadtverordneter in Oranienburg und
               engagiere mich in der Kommunalpolitik. Erfahre hier mehr über mich. <img src="link-dark.svg" alt="link">
@@ -601,7 +689,7 @@
         <a href="./kontakt">
           <div class="card card-link">
             <img src="kontakt.jpeg" alt="Kontakt">
-            <h2>Kontakt</h2>
+            <h2><span>Kontakt</span></h2>
             <p>
               Haben Sie Fragen, Anregungen oder etwas anderes? Kontaktieren Sie mich gern. <img src="link-dark.svg" alt="link">
             </p>
@@ -611,11 +699,11 @@
         <!-- Card 4: CDU Oranienburg -->
         <div class="card">
           <img src="fraktion.jpeg" alt="CDU Fraktion Oranienburg">
-          <h2>CDU Oranienburg</h2>
+          <h2><span>CDU</span><span>Oranienburg</span></h2>
           <p>Erfahre mehr über die CDU und unsere Fraktion in Oranienburg:</p>
             <div class="cdu-links">
               <a href="https://www.cdu-oranienburg.de">
-                <img src="web-icon-dark.svg" alt="cdu-oranienburg.de">Webseite <img style="width: 15px;
+                <img src="web-icon-dark.svg" alt="cdu-oranienburg.de">Webseite<img style="width: 15px;
                 height: 15px; margin: 0; margin-left: 3px; display: inline;" src="link-dark.svg" alt="link">
               </a>
               <a href="https://www.facebook.com/CDUoranienburg/">
@@ -624,6 +712,23 @@
               </a>
               <a href="https://instagram.com/cdu.oranienburg">
                 <img src="instagram-icon-dark.svg" alt="Instagram-Icon">Instagram <img style="width: 15px;
+                height: 15px; margin: 0; margin-left: 3px; display: inline;" src="link-dark.svg" alt="link">
+              </a>
+            </div>
+        </div>
+
+        <!-- Card 5: Mitglied werden -->
+        <div class="card member-call">
+          <img src="member.jpeg" alt="CDU Fraktion Oranienburg">
+          <h2><span class="member-h2">Jetzt</span></span><span class="member-h2">Mitglied</span><span class="member-h2">werden!</span></h2>
+          <p>Zu den Online-Anträgen der CDU und Jungen Union:</p>
+            <div class="cdu-links member-links">
+              <a href="https://www.cdu-deutschlands.de/mitglied-werden">
+                <img src="web-icon-dark.svg" alt="CDU-Mitglied werden">CDU <img style="width: 15px;
+                height: 15px; margin: 0; margin-left: 3px; display: inline;" src="link-dark.svg" alt="link">
+              </a>
+              <a href="https://www.junge-union.de/mitmachen/mitglied-werden/">
+                <img src="web-icon-dark.svg" alt="JU-Mitglied werden">Junge Union <img style="width: 15px;
                 height: 15px; margin: 0; margin-left: 3px; display: inline;" src="link-dark.svg" alt="link">
               </a>
             </div>
