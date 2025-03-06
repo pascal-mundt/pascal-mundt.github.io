@@ -4,9 +4,7 @@
     "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet ...",
     "titleImage": "beruflich.jpeg",
     "date": "2025-09-01",
-    "otherMedia": [
-      "ehrenamt.jpeg"
-    ]
+    "otherMedia": [ "ehrenamt.jpeg" ]
   },
   {
     "title": "Mein Projekt C",
@@ -42,5 +40,5 @@
     "titleImage": "fraktion.jpeg",
     "date": "2025-08-08",
     "otherMedia": []
-  },
+  }
 ]
