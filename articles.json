@@ -2,17 +2,16 @@
   {
     "title": "Mein Projekt A",
     "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet ...",
-    "titleImage": "projektA-titelbild.jpg",
+    "titleImage": "beruflich.jpeg",
     "date": "2025-09-01",
     "otherMedia": [
-      "projektA-bild1.jpg",
-      "projektA-video1.mp4"
+      "ehrenamt.jpeg"
     ]
   },
   {
     "title": "Mein Projekt B",
-    "fullText": "Auch hier sehr langer Text. Lorem ipsum ...",
-    "titleImage": "projektB-titelbild.jpg",
+    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "titleImage": "fraktion.jpeg",
     "date": "2025-08-15",
     "otherMedia": []
   }
