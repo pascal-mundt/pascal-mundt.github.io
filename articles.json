@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Mein Projekt A",
+    "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet ...",
+    "titleImage": "projektA-titelbild.jpg",
+    "date": "2025-09-01",
+    "otherMedia": [
+      "projektA-bild1.jpg",
+      "projektA-video1.mp4"
+    ]
+  },
+  {
+    "title": "Mein Projekt B",
+    "fullText": "Auch hier sehr langer Text. Lorem ipsum ...",
+    "titleImage": "projektB-titelbild.jpg",
+    "date": "2025-08-15",
+    "otherMedia": []
+  }
+]
