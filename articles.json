@@ -8,7 +8,7 @@
     [ {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXzvHqhMbZ56TVJQ?embed=1"},
       {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?embed=1"},
       {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?embed=1&width=1200&height=1600"},
-      {"type": "video", "url": "<iframe src="https://1drv.ms/v/s!AoO3I6kE1Usfg60BpqrBeUnCBU3Zeg?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>"}
+      {"type": "video", "url": "https://1drv.ms/v/s!AoO3I6kE1Usfg60BpqrBeUnCBU3Zeg?embed=1"}
     ],
     "highlight": 0
   },
