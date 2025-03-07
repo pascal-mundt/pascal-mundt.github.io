@@ -4,15 +4,7 @@
     "fullText": "Antragstext",
     "titleImage": "",
     "date": "2025-05-15",
-    "otherMedia": [ {
-        "type": "image",
-        "url": ""
-      },
-      {
-        "type": "video",
-        "url": ""
-      } 
-    ],
+    "otherMedia": [],
     "highlight": 0
   },
   
