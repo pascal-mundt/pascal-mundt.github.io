@@ -7,7 +7,8 @@
     "otherMedia": 
     [ {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXzvHqhMbZ56TVJQ?embed=1"},
       {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?embed=1"},
-      {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?embed=1&width=1200&height=1600"}
+      {"type": "image", "url": "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?embed=1&width=1200&height=1600"},
+      {"type": "video", "url": "<iframe src="https://1drv.ms/v/s!AoO3I6kE1Usfg60BpqrBeUnCBU3Zeg?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>"}
     ],
     "highlight": 0
   },
@@ -16,7 +17,15 @@
     "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "titleImage": "fraktion.jpeg",
     "date": "2025-08-15",
-    "otherMedia": [ "fraktion.jpeg" ],
+    "otherMedia": [ {
+        "type": "image",
+        "url": "https://1drv.ms/i/s!AoO3I6kE1UsfDEF?embed=1"
+      },
+      {
+        "type": "video",
+        "url": "https://1drv.ms/v/s!AoO3I6kE1UsfGHI?embed=1"
+      } 
+    ],
     "highlight": 0
   }
 ]
