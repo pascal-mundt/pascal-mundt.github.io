@@ -1,10 +1,23 @@
 [
   {
-    "title": "Mein Projekt A",
-    "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet.",
-    "titleImage": "beruflich.jpeg",
-    "date": "2025-09-01",
-    "otherMedia": [ "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg" ],
+    "title": "Sportliches Ehrenamt gefeiert",
+    "fullText": "Stadtempfang 2024 unter dem Motto &bdquo;Es lebe der Sport&ldquo; – Unter diesem Motto haben wir das unfassbare sportliche Ehrenamt in Oranienburg geüwrdigt. Auch ich durfte als stellv. Vorsitzender der Stadtverordnetenversammlung ein Grußwort im Namen aller Stadtverordneten an die Trainer, Sportler und sogar Olympioniken richten. <br> Meine vollständige Rede zum Nachlesen gibts hier: <br>
+Liebe Oranienburgerinnen und Oranienburger, <br>
+sehr geehrter Herr Bürgermeister, <br>
+sehr geehrte Damen und Herren Stadtverordnete, <br>
+sehr geehrte Vertreter und Mitglieder unserer Vereine, <br>
+liebe Gäste, <br><br>
+unser Bürgermeister hat die besondere Bedeutung des Sports für unsere Stadt bereits klar erkennen lassen. Als Mitglied des Präsidiums der Stadtverordnetenversammlung und heute hier als Vertreter aller Stadtverordneten möchte ich die Gelegenheit nutzen und gern auf einen weiteren Aspekt aufmerksam machen. <br>
+Morgen, am 3. Oktober, feiern wir unsere deutsche Einheit. Über die letzte Zeit ist jedoch zu beobachten, dass die Einheit unter uns, der gesellschaftliche Zusammenhalt, nachgelassen hat – was ich, wie viele andere, bedenklich finde. Umso wichtiger ist es, dass wir unsere Vereine fördern und stärken. Denn es ist unsere Vereinskultur, die uns als Gesellschaft Begegnungsstätten bietet und einen essenziellen Beitrag dazu leistet, uns zusammenzuführen. Wo besser als beim Sport, lernt man Fairness, Teamgeist, Vertrauen und auch die Verantwortung füreinander. <br>
+Das wichtige dabei ist, diese Wirkung strahlt aus. Auch die regelmäßigen Besucher von beispielsweise Fußball- und Handballspielen oder anderen Wettkämpfen, werden von diesem Teamgeist und einem fairen Spiel begeistert – sie rücken dabei zusammen. Daher haben sportliche Veranstaltungen und die Vereinsarbeit eine starke Vorbildfunktion und unterstützen aktiv den gesellschaftlichen Zusammenhalt. <br>
+Oranienburg bietet dabei eine sehr vielfältige Auswahl. Neben Spitzenleistungen und Profisport gibt es auch Trainingsangebote in zahlreichen Sportarten für die Kinder und Jugend unserer Stadt. Unsere Vereine tragen dazu bei, unserer Jugend genau die eben beschriebenen Werte zu vermitteln – egal ob beim Einzel- oder Mannschaftssport – und sie direkt in ein gemeinschaftliches Leben einzubinden. <br>
+Wir als Kommunalpolitik haben diese Bedeutung des Sportes in unserer Stadt verstanden. Für uns ist es wichtig, die Sportförderung für dieses vielfältige Angebot und auch seine Qualität fortzuführen. <br>                
+Doch es sind Sie mit Ihren Vereinen und auch persönlichem Einsatz, die dies erst ermöglichen. Denn der Sport und unsere Vereine leben in großem Maße von ehrenamtlichem Engagement. Von der Vereinsführung bis zu den Trainerinnen und Trainern schenken Sie Ihre Freizeit den Vereinen – also unserer Gemeinschaft. Für Ihren Einsatz möchten wir Ihnen danken und um dies zu verdeutlichen, zeichnet die Stadt Oranienburg in jedem Jahr verdienten Menschen, die sich besonders für die Gesellschaft unserer Stadt einsetzen mit dem Ehrenpreis aus.",
+    "titleImage": "https://onedrive.live.com/download?resid=AoO3I6kE1Usfg6xXGVppckiuA3H1xQ",
+    "date": "2024-10-02",
+    "otherMedia": 
+    [ "https://1drv.ms/i/s!AoO3I6kE1Usfg6xXGVppckiuA3H1xQ?e=sFj5ni"
+    ],
     "highlight": 0
   },
   {
@@ -13,86 +26,6 @@
     "titleImage": "fraktion.jpeg",
     "date": "2025-08-15",
     "otherMedia": [ "fraktion.jpeg" ],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt B",
-    "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-16",
-    "otherMedia": [],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt D",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-14",
-    "otherMedia": [],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt E",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-10",
-    "otherMedia": [],
-    "highlight": 1
-  },
-  {
-    "title": "Mein Projekt F",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-08",
-    "otherMedia": [],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt A",
-    "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet.",
-    "titleImage": "beruflich.jpeg",
-    "date": "2025-09-01",
-    "otherMedia": [ "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg", "ehrenamt.jpeg" ],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt C",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-15",
-    "otherMedia": [ "fraktion.jpeg" ],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt B",
-    "fullText": "Hier steht der komplette Text, der gerne länger als 300 Zeichen sein darf. Lorem ipsum dolor sit amet.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-16",
-    "otherMedia": [],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt D",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-14",
-    "otherMedia": [],
-    "highlight": 1
-  },
-  {
-    "title": "Mein Projekt E",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-10",
-    "otherMedia": [],
-    "highlight": 0
-  },
-  {
-    "title": "Mein Projekt F",
-    "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "titleImage": "fraktion.jpeg",
-    "date": "2025-08-08",
-    "otherMedia": [],
     "highlight": 0
   }
 ]
